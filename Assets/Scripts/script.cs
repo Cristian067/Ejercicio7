@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class script : MonoBehaviour
@@ -18,6 +19,7 @@ public class script : MonoBehaviour
         Ej1();
         Ej2();
         Ej3();
+        Ej4();
         Ej5();
     }
 
@@ -68,6 +70,29 @@ public class script : MonoBehaviour
 
     private void Ej4()
     {
+        int sum = 0;
+        int rnumber = 0;
+
+        while (rnumber != 5)
+        {
+            rnumber = Random.Range(0, 10);
+            sum += rnumber;
+        }
+
+        if(sum > 100)
+        {
+            Debug.Log("The sum of the numbers is greater than 100" + $". Number: {sum}");
+
+        }
+        else
+        {
+            Debug.Log("The sum of the numbers is less than 100" + $". Number: {sum}");
+
+        }
+
+        //Debug.Log(sum);
+
+
 
     }
     
