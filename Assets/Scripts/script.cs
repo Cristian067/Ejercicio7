@@ -9,6 +9,8 @@ public class script : MonoBehaviour
 
     [SerializeField] private string palabra;
 
+    private string word;
+
 
     // Start is called before the first frame update
     void Start()
@@ -71,9 +73,25 @@ public class script : MonoBehaviour
     
     private void Ej5()
     {
+        
         for (int i = 0; i < palabra.Length; i++)
         {
-            Debug.Log(palabra[i]);
+            //string letra = palabra[i];
+            if(palabra[i] != 'a')
+            {
+                //Debug.Log(palabra[i]);
+                word += $"{palabra[i]}";
+            }
+            else
+            {
+                Debug.Log(word);
+                return;
+            }
+
+
+
+            
+            
         }
     }
 
